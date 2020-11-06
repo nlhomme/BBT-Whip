@@ -11,6 +11,8 @@
 		373735782555F416006E1AA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373735772555F416006E1AA6 /* ContentView.swift */; };
 		3737357A2555F416006E1AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373735792555F416006E1AA6 /* Assets.xcassets */; };
 		3737357D2555F416006E1AA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3737357C2555F416006E1AA6 /* Preview Assets.xcassets */; };
+		373735862555F9D9006E1AA6 /* ShakeGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */; };
+		3737359825560A92006E1AA6 /* whip-cracking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3737359725560A92006E1AA6 /* whip-cracking.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		373735792555F416006E1AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3737357C2555F416006E1AA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3737357E2555F416006E1AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeGestureManager.swift; sourceTree = "<group>"; };
+		3737359725560A92006E1AA6 /* whip-cracking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "whip-cracking.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 			children = (
 				373735752555F416006E1AA6 /* BBT_WhipApp.swift */,
 				373735772555F416006E1AA6 /* ContentView.swift */,
+				373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */,
 				373735792555F416006E1AA6 /* Assets.xcassets */,
 				3737357E2555F416006E1AA6 /* Info.plist */,
+				3737359525560A1C006E1AA6 /* Sounds */,
 				3737357B2555F416006E1AA6 /* Preview Content */,
 			);
 			path = "BBT-Whip";
@@ -67,6 +73,14 @@
 				3737357C2555F416006E1AA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3737359525560A1C006E1AA6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3737359725560A92006E1AA6 /* whip-cracking.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 			files = (
 				3737357D2555F416006E1AA6 /* Preview Assets.xcassets in Resources */,
 				3737357A2555F416006E1AA6 /* Assets.xcassets in Resources */,
+				3737359825560A92006E1AA6 /* whip-cracking.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				373735782555F416006E1AA6 /* ContentView.swift in Sources */,
 				373735762555F416006E1AA6 /* BBT_WhipApp.swift in Sources */,
+				373735862555F9D9006E1AA6 /* ShakeGestureManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
