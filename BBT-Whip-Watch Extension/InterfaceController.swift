@@ -8,6 +8,10 @@
 import WatchKit
 import Foundation
 
+import AVFoundation
+let path = Bundle.main.path(forResource: "whip-cracking.mp3", ofType: nil)!
+let url = URL(fileURLWithPath: path)
+var whipCrackingSoundEffect: AVAudioPlayer?
 
 class InterfaceController: WKInterfaceController {
 
@@ -37,7 +41,13 @@ class InterfaceController: WKInterfaceController {
 extension InterfaceController: WatchShakerDelegate
 {
     func watchShaker(_ watchShaker: WatchShaker, didShakeWith sensibility: ShakeSensibility) {
-        print("YOU HAVE SHAKEN YOUR ⌚️⌚️⌚️")
+        //print("YOU HAVE SHAKEN YOUR ⌚️⌚️⌚️")
+        do {
+            whipCrackingSoundEffect = try AVAudioPlayer(contentsOf: url)
+            whipCrackingSoundEffect?.play()
+        } catch {
+            // couldn't load a file :(
+        }
     }
 
     func watchShaker(_ watchShaker: WatchShaker, didFailWith error: Error) {
