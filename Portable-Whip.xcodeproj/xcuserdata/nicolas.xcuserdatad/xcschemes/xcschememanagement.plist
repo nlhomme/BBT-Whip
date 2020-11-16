@@ -4,20 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BBT-Whip-Watch (Complication).xcscheme_^#shared#^_</key>
+		<key>Portable-Whip-Watch (Complication).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>BBT-Whip-Watch.xcscheme_^#shared#^_</key>
+		<key>Portable-Whip.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BBT-Whip.xcscheme_^#shared#^_</key>
+		<key>Portable-WhipWatch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>373735712555F415006E1AA6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>378177FF25628D0800807BBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

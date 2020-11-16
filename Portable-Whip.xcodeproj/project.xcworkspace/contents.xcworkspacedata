@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:AppIcons"
-      name = "AppIcons">
-   </Group>
    <FileRef
-      location = "self:">
+      location = "self:/Users/nicolas/git/swift/BBT-Whip/Portable-Whip.xcodeproj">
    </FileRef>
 </Workspace>
