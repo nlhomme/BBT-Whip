@@ -77,9 +77,6 @@
 		373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeGestureManager.swift; sourceTree = "<group>"; };
 		3737359725560A92006E1AA6 /* whip-cracking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "whip-cracking.mp3"; sourceTree = "<group>"; };
 		377BB658256298BA0022D5F7 /* whip-cracking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "whip-cracking.mp3"; sourceTree = "<group>"; };
-		377BB65E25629BED0022D5F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		377BB65F25629BED0022D5F7 /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
-		377BB66025629BED0022D5F7 /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
 		3781780025628D0800807BBA /* BBT-Whip-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBT-Whip-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3781780325628D0800807BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		3781780525628D0900807BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +115,6 @@
 				3781780125628D0800807BBA /* BBT-Whip-Watch */,
 				3781781025628D0900807BBA /* BBT-Whip-Watch Extension */,
 				373735732555F415006E1AA6 /* Products */,
-				37817833256293FF00807BBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,16 +166,6 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		377BB65D25629BED0022D5F7 /* AppIcons */ = {
-			isa = PBXGroup;
-			children = (
-				377BB65E25629BED0022D5F7 /* Assets.xcassets */,
-				377BB65F25629BED0022D5F7 /* appstore.png */,
-				377BB66025629BED0022D5F7 /* playstore.png */,
-			);
-			path = AppIcons;
-			sourceTree = "<group>";
-		};
 		3781780125628D0800807BBA /* BBT-Whip-Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,14 +188,6 @@
 				3781781925628D0A00807BBA /* Info.plist */,
 			);
 			path = "BBT-Whip-Watch Extension";
-			sourceTree = "<group>";
-		};
-		37817833256293FF00807BBA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				377BB65D25629BED0022D5F7 /* AppIcons */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
