@@ -11,11 +11,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Portable_Whip_Watch" customModuleProvider="target">
                     <items>
+                        <label alignment="center" verticalAlignment="bottom" text="Shake to whip" id="99f-Sd-Ll8"/>
                         <imageView width="136" height="118" alignment="center" verticalAlignment="center" image="Whip" contentMode="scaleAspectFit" id="dKm-q4-4RC"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="283" y="4"/>
+            <point key="canvasLocation" x="283" y="3.5"/>
         </scene>
     </scenes>
     <resources>
