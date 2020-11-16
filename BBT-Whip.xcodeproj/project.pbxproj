@@ -13,7 +13,58 @@
 		3737357D2555F416006E1AA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3737357C2555F416006E1AA6 /* Preview Assets.xcassets */; };
 		373735862555F9D9006E1AA6 /* ShakeGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */; };
 		3737359825560A92006E1AA6 /* whip-cracking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3737359725560A92006E1AA6 /* whip-cracking.mp3 */; };
+		3781780425628D0800807BBA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781780225628D0800807BBA /* Interface.storyboard */; };
+		3781780625628D0900807BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781780525628D0900807BBA /* Assets.xcassets */; };
+		3781780D25628D0900807BBA /* BBT-Whip-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3781780C25628D0900807BBA /* BBT-Whip-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3781781225628D0900807BBA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781781125628D0900807BBA /* InterfaceController.swift */; };
+		3781781425628D0900807BBA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781781325628D0900807BBA /* ExtensionDelegate.swift */; };
+		3781781625628D0900807BBA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781781525628D0900807BBA /* ComplicationController.swift */; };
+		3781781825628D0A00807BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781781725628D0A00807BBA /* Assets.xcassets */; };
+		3781781C25628D0A00807BBA /* BBT-Whip-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3781780025628D0800807BBA /* BBT-Whip-Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3781782925628FFE00807BBA /* WatchShaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781782825628FFE00807BBA /* WatchShaker.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3781780E25628D0900807BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3737356A2555F415006E1AA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3781780B25628D0900807BBA;
+			remoteInfo = "BBT-Whip-Watch Extension";
+		};
+		3781781A25628D0A00807BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3737356A2555F415006E1AA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 378177FF25628D0800807BBA;
+			remoteInfo = "BBT-Whip-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3781781D25628D0A00807BBA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3781781C25628D0A00807BBA /* BBT-Whip-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3781782025628D0A00807BBA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3781780D25628D0900807BBA /* BBT-Whip-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		373735722555F415006E1AA6 /* BBT-Whip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBT-Whip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +75,28 @@
 		3737357E2555F416006E1AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeGestureManager.swift; sourceTree = "<group>"; };
 		3737359725560A92006E1AA6 /* whip-cracking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "whip-cracking.mp3"; sourceTree = "<group>"; };
+		3781780025628D0800807BBA /* BBT-Whip-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBT-Whip-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3781780325628D0800807BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3781780525628D0900807BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3781780725628D0900807BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3781780C25628D0900807BBA /* BBT-Whip-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BBT-Whip-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3781781125628D0900807BBA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3781781325628D0900807BBA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3781781525628D0900807BBA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3781781725628D0A00807BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3781781925628D0A00807BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3781782825628FFE00807BBA /* WatchShaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchShaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3737356F2555F415006E1AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3781780925628D0900807BBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				373735742555F415006E1AA6 /* BBT-Whip */,
+				3781780125628D0800807BBA /* BBT-Whip-Watch */,
+				3781781025628D0900807BBA /* BBT-Whip-Watch Extension */,
 				373735732555F415006E1AA6 /* Products */,
+				37817833256293FF00807BBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				373735722555F415006E1AA6 /* BBT-Whip.app */,
+				3781780025628D0800807BBA /* BBT-Whip-Watch.app */,
+				3781780C25628D0900807BBA /* BBT-Whip-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +157,36 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		3781780125628D0800807BBA /* BBT-Whip-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				3781780225628D0800807BBA /* Interface.storyboard */,
+				3781780525628D0900807BBA /* Assets.xcassets */,
+				3781780725628D0900807BBA /* Info.plist */,
+			);
+			path = "BBT-Whip-Watch";
+			sourceTree = "<group>";
+		};
+		3781781025628D0900807BBA /* BBT-Whip-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3781781125628D0900807BBA /* InterfaceController.swift */,
+				3781781325628D0900807BBA /* ExtensionDelegate.swift */,
+				3781781525628D0900807BBA /* ComplicationController.swift */,
+				3781782825628FFE00807BBA /* WatchShaker.swift */,
+				3781781725628D0A00807BBA /* Assets.xcassets */,
+				3781781925628D0A00807BBA /* Info.plist */,
+			);
+			path = "BBT-Whip-Watch Extension";
+			sourceTree = "<group>";
+		};
+		37817833256293FF00807BBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,15 +197,51 @@
 				3737356E2555F415006E1AA6 /* Sources */,
 				3737356F2555F415006E1AA6 /* Frameworks */,
 				373735702555F415006E1AA6 /* Resources */,
+				3781781D25628D0A00807BBA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3781781B25628D0A00807BBA /* PBXTargetDependency */,
 			);
 			name = "BBT-Whip";
 			productName = "BBT-Whip";
 			productReference = 373735722555F415006E1AA6 /* BBT-Whip.app */;
 			productType = "com.apple.product-type.application";
+		};
+		378177FF25628D0800807BBA /* BBT-Whip-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3781782425628D0A00807BBA /* Build configuration list for PBXNativeTarget "BBT-Whip-Watch" */;
+			buildPhases = (
+				378177FE25628D0800807BBA /* Resources */,
+				3781782025628D0A00807BBA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3781780F25628D0900807BBA /* PBXTargetDependency */,
+			);
+			name = "BBT-Whip-Watch";
+			productName = "BBT-Whip-Watch";
+			productReference = 3781780025628D0800807BBA /* BBT-Whip-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3781780B25628D0900807BBA /* BBT-Whip-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3781782325628D0A00807BBA /* Build configuration list for PBXNativeTarget "BBT-Whip-Watch Extension" */;
+			buildPhases = (
+				3781780825628D0900807BBA /* Sources */,
+				3781780925628D0900807BBA /* Frameworks */,
+				3781780A25628D0900807BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BBT-Whip-Watch Extension";
+			productName = "BBT-Whip-Watch Extension";
+			productReference = 3781780C25628D0900807BBA /* BBT-Whip-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -109,11 +249,17 @@
 		3737356A2555F415006E1AA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					373735712555F415006E1AA6 = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					378177FF25628D0800807BBA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					3781780B25628D0900807BBA = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -131,6 +277,8 @@
 			projectRoot = "";
 			targets = (
 				373735712555F415006E1AA6 /* BBT-Whip */,
+				378177FF25628D0800807BBA /* BBT-Whip-Watch */,
+				3781780B25628D0900807BBA /* BBT-Whip-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +291,23 @@
 				3737357D2555F416006E1AA6 /* Preview Assets.xcassets in Resources */,
 				3737357A2555F416006E1AA6 /* Assets.xcassets in Resources */,
 				3737359825560A92006E1AA6 /* whip-cracking.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378177FE25628D0800807BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781780625628D0900807BBA /* Assets.xcassets in Resources */,
+				3781780425628D0800807BBA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3781780A25628D0900807BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781781825628D0A00807BBA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +324,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3781780825628D0900807BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3781781425628D0900807BBA /* ExtensionDelegate.swift in Sources */,
+				3781782925628FFE00807BBA /* WatchShaker.swift in Sources */,
+				3781781225628D0900807BBA /* InterfaceController.swift in Sources */,
+				3781781625628D0900807BBA /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3781780F25628D0900807BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3781780B25628D0900807BBA /* BBT-Whip-Watch Extension */;
+			targetProxy = 3781780E25628D0900807BBA /* PBXContainerItemProxy */;
+		};
+		3781781B25628D0A00807BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 378177FF25628D0800807BBA /* BBT-Whip-Watch */;
+			targetProxy = 3781781A25628D0A00807BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3781780225628D0800807BBA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3781780325628D0800807BBA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3737357F2555F416006E1AA6 /* Debug */ = {
@@ -213,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +488,7 @@
 				DEVELOPMENT_TEAM = BM8K25SVCR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "BBT-Whip/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +510,7 @@
 				DEVELOPMENT_TEAM = BM8K25SVCR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "BBT-Whip/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +518,91 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3781781E25628D0A00807BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM8K25SVCR;
+				IBSC_MODULE = BBT_Whip_Watch_Extension;
+				INFOPLIST_FILE = "BBT-Whip-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		3781781F25628D0A00807BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM8K25SVCR;
+				IBSC_MODULE = BBT_Whip_Watch_Extension;
+				INFOPLIST_FILE = "BBT-Whip-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		3781782125628D0A00807BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM8K25SVCR;
+				INFOPLIST_FILE = "BBT-Whip-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		3781782225628D0A00807BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM8K25SVCR;
+				INFOPLIST_FILE = "BBT-Whip-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.BBT-Whip.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -339,6 +623,24 @@
 			buildConfigurations = (
 				373735822555F416006E1AA6 /* Debug */,
 				373735832555F416006E1AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3781782325628D0A00807BBA /* Build configuration list for PBXNativeTarget "BBT-Whip-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3781782125628D0A00807BBA /* Debug */,
+				3781782225628D0A00807BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3781782425628D0A00807BBA /* Build configuration list for PBXNativeTarget "BBT-Whip-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3781781E25628D0A00807BBA /* Debug */,
+				3781781F25628D0A00807BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
