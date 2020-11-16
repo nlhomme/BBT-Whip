@@ -534,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM8K25SVCR;
-				IBSC_MODULE = BBT_Whip_Watch_Extension;
+				IBSC_MODULE = Portable_Whip_Watch_Extension;
 				INFOPLIST_FILE = "Portable-Whip-Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.Portable-Whip.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -554,7 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM8K25SVCR;
-				IBSC_MODULE = BBT_Whip_Watch_Extension;
+				IBSC_MODULE = Portable_Whip_Watch_Extension;
 				INFOPLIST_FILE = "Portable-Whip-Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nlhomme.Portable-Whip.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";

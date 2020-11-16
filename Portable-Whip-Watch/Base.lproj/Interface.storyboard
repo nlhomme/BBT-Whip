@@ -9,7 +9,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BBT_Whip_Watch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Portable_Whip_Watch" customModuleProvider="target">
                     <items>
                         <imageView width="136" height="118" alignment="center" verticalAlignment="center" image="Whip" contentMode="scaleAspectFit" id="dKm-q4-4RC"/>
                     </items>
