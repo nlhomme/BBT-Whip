@@ -18,7 +18,7 @@ struct ContentView: View {
         ZStack {
             ShakableViewRepresentable()
                 .allowsHitTesting(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
-            
+
             VStack{
                 Button(action: {
                     print("show setting view")
@@ -46,7 +46,7 @@ struct ContentView: View {
                 } catch {
                     // couldn't load a file :(
                 }
-        }
+            }
     }
 }
 
