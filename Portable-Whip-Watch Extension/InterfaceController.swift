@@ -20,7 +20,7 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
 
-    var shaker:WatchShaker = WatchShaker(shakeSensibility: .shakeSensibilityNormal, delay: 0.2)
+    var shaker:WatchShaker = WatchShaker(shakeSensibility: .shakeSensibilityHard, delay: 0.2)
 
     override func willActivate() {
 
