@@ -20,10 +20,22 @@ struct ContentView: View {
                 .allowsHitTesting(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
             
             VStack{
+                Button(action: {
+                    print("show setting view")
+                }){
+                    Image(systemName: "gearshape.fill")
+                        .font(.system(size: 24, weight: .regular))
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.trailing)
+                }
                 Spacer()
+                
                 Image("Whip")
                     .resizable()
                     .scaledToFit()
+                    .frame(alignment: .center)
+                Text("Shake to whip")
+                    .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Spacer()
             }
         }
