@@ -15,38 +15,41 @@ var whipCrackingSoundEffect: AVAudioPlayer?
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ShakableViewRepresentable()
-                .allowsHitTesting(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
+        NavigationView(){
+            ZStack {
+                ShakableViewRepresentable()
+                    .allowsHitTesting(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
 
-            VStack{
-                Button(action: {
-                    print("show setting view")
-                }){
-                    Image(systemName: "gearshape.fill")
-                        .font(.system(size: 24, weight: .regular))
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.trailing)
-                }
-                Spacer()
+                VStack{
+                    HStack{
+                        Spacer()
+                        NavigationLink(destination: SettingsView()) {
+                            Image(systemName: "gear").scaleEffect(1.4)
+                        }.padding()
+                    }
                 
-                Image("Whip")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(alignment: .center)
-                Text("Shake to whip")
-                    .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                Spacer()
-            }
-        }
+                    Spacer()
+                
+                    Image("Whip")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(alignment: .center)
+                    Text("Shake to whip")
+                        .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                }
+            }.navigationBarTitle("Portable Whip")
+            .navigationBarHidden(true)
+
             .onReceive(messagePublisher){ _ in
                 do {
                     whipCrackingSoundEffect = try AVAudioPlayer(contentsOf: url)
-                    whipCrackingSoundEffect?.play()
+            whipCrackingSoundEffect?.play()
                 } catch {
                     // couldn't load a file :(
                 }
             }
+        }
     }
 }
 
