@@ -24,7 +24,8 @@ struct ContentView: View {
                     HStack{
                         Spacer()
                         NavigationLink(destination: SettingsView()) {
-                            Image(systemName: "gear").scaleEffect(1.4)
+                            Image(systemName: "gear")
+                                .font(.system(size: 24, weight: .bold))
                         }.padding()
                     }
                 
