@@ -29,7 +29,7 @@ struct SettingsView: View {
                     content: {
 /* For later
                         Link(destination: URL(string: "https://itunes.apple.com/app/id\(appID)?action=write-review"), label: {
-                            Label("See on Github", systemImage: "cloud")
+                            Label("Rate on the App Store", systemImage: "star")
                         })
 */
                         Link(destination: URL(string: "mailto:contact@nlhomme.fr")!, label: {
