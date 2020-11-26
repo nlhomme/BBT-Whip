@@ -11,6 +11,8 @@ struct SettingsView: View {
     @State private var selectedDisplayMode: NavigationBarItem.TitleDisplayMode = .large
     @State private var navigationTitle: String = "Settings"
     @Environment(\.openURL) var openURL
+
+    let versionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     
     var body: some View {
         VStack{
@@ -30,7 +32,7 @@ struct SettingsView: View {
                         Link(destination: URL(string: "https://github.com/nlhomme/Portable-Whip")!, label: {
                             Label("See on Github", systemImage: "sun.max")
                         })
-                        Label("Version: 1.0", systemImage: "info.circle")
+                        Label("Version: \(versionNumber!)", systemImage: "info.circle")
                     }
                 )
             }.listStyle(InsetGroupedListStyle())
