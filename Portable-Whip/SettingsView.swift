@@ -10,7 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     @State private var selectedDisplayMode: NavigationBarItem.TitleDisplayMode = .large
     @State private var navigationTitle: String = "Settings"
-
+    @Environment(\.openURL) var openURL
+    
     var body: some View {
         VStack{
             List {
@@ -22,11 +23,13 @@ struct SettingsView: View {
                         Label("Rain", systemImage: "cloud.rain")
                     }
                 )
-                Section(header: Text("Section2"),
+                Section(header: Text("Portable Whip"),
                     footer: Text("Pouet"),
                     content: {
                         Label("Sun", systemImage: "sun.max")
-                        Label("Sun", systemImage: "sun.max")
+                        Link(destination: URL(string: "https://github.com/nlhomme/Portable-Whip")!, label: {
+                            Label("See on Github", systemImage: "sun.max")
+                        })
                         Label("Version: 1.0", systemImage: "info.circle")
                     }
                 )
