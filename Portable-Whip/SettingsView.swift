@@ -25,17 +25,24 @@ struct SettingsView: View {
                         Label("Rain", systemImage: "cloud.rain")
                     }
                 )
-                Section(header: Text("Portable Whip"),
-                    footer: Text("Pouet"),
+                Section(//header: Text("Portable Whip"),
                     content: {
-                        Label("Sun", systemImage: "sun.max")
+/* For later
+                        Link(destination: URL(string: "https://itunes.apple.com/app/id\(appID)?action=write-review"), label: {
+                            Label("See on Github", systemImage: "cloud")
+                        })
+*/
+                        Link(destination: URL(string: "mailto:contact@nlhomme.fr")!, label: {
+                            Label("Contact", systemImage: "envelope")
+                        })
                         Link(destination: URL(string: "https://github.com/nlhomme/Portable-Whip")!, label: {
-                            Label("See on Github", systemImage: "sun.max")
+                            Label("See on Github", systemImage: "cloud")
                         })
                         Label("Version: \(versionNumber!)", systemImage: "info.circle")
                     }
                 )
             }.listStyle(InsetGroupedListStyle())
+            .buttonStyle(PlainButtonStyle())
             
         }.navigationBarTitle(navigationTitle)
         .navigationBarTitleDisplayMode(.large)
