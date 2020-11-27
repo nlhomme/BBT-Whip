@@ -36,7 +36,7 @@ struct SettingsView: View {
                             Label("Contact", systemImage: "envelope")
                         })
                         Link(destination: URL(string: "https://github.com/nlhomme/Portable-Whip")!, label: {
-                            Label("See on Github", systemImage: "cloud")
+                            Label("See on GitHub", systemImage: "cloud")
                         })
                         Label("Version: \(versionNumber!)", systemImage: "info.circle")
                     }
