@@ -12,6 +12,8 @@ struct SettingsView: View {
     @State private var navigationTitle: String = "Settings"
     @Environment(\.openURL) var openURL
 
+    @Environment(\.colorScheme) var colorScheme
+    
     let versionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     
     var body: some View {
@@ -20,7 +22,6 @@ struct SettingsView: View {
                 Section(header: Text("Section"),
                     footer: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
                     content: {
-                        Label("Sun", systemImage: "sun.max")
                         Label("Cloud", systemImage: "cloud")
                         Label("Rain", systemImage: "cloud.rain")
                     }
@@ -43,6 +44,9 @@ struct SettingsView: View {
                 )
             }.listStyle(InsetGroupedListStyle())
             .buttonStyle(PlainButtonStyle())
+            
+            // FOR DEBUG ONLY
+            //Text(colorScheme == .dark ? "In dark mode" : "In light mode")
             
         }.navigationBarTitle(navigationTitle)
         .navigationBarTitleDisplayMode(.large)

@@ -14,6 +14,7 @@ let url = URL(fileURLWithPath: path)
 var whipCrackingSoundEffect: AVAudioPlayer?
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView(){
             ZStack {
