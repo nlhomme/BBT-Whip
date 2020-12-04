@@ -36,6 +36,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(alignment: .center)
+                        .padding()
                     Text("Shake to whip")
                         .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
