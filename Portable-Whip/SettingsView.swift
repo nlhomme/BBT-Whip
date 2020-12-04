@@ -10,27 +10,19 @@ import SwiftUI
 struct SettingsView: View {
     @State private var selectedDisplayMode: NavigationBarItem.TitleDisplayMode = .large
     @State private var navigationTitle: String = "Settings"
+    
     @Environment(\.openURL) var openURL
-
-    @Environment(\.colorScheme) var colorScheme
     
     let versionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     
     var body: some View {
         VStack{
             List {
-                Section(header: Text("Section"),
-                    footer: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-                    content: {
-                        Label("Cloud", systemImage: "cloud")
-                        Label("Rain", systemImage: "cloud.rain")
-                    }
-                )
-                Section(//header: Text("Portable Whip"),
+                Section(//header: Text("Section"),
                     content: {
 /* For later
                         Link(destination: URL(string: "https://itunes.apple.com/app/id\(appID)?action=write-review"), label: {
-                            Label("Rate on the App Store", systemImage: "star")
+                                                    Label("Rate on the App Store", systemImage: "star")
                         })
 */
                         Link(destination: URL(string: "mailto:contact@nlhomme.fr")!, label: {
@@ -39,14 +31,15 @@ struct SettingsView: View {
                         Link(destination: URL(string: "https://github.com/nlhomme/Portable-Whip")!, label: {
                             Label("See on GitHub", systemImage: "cloud")
                         })
+                    }
+                )
+                Section(//header: Text("Version"),
+                    content: {
                         Label("Version: \(versionNumber!)", systemImage: "info.circle")
                     }
                 )
             }.listStyle(InsetGroupedListStyle())
             .buttonStyle(PlainButtonStyle())
-            
-            // FOR DEBUG ONLY
-            //Text(colorScheme == .dark ? "In dark mode" : "In light mode")
             
         }.navigationBarTitle(navigationTitle)
         .navigationBarTitleDisplayMode(.large)
