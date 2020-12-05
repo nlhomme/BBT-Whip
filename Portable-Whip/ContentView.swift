@@ -37,8 +37,8 @@ struct ContentView: View {
                         .scaledToFit()
                         .frame(alignment: .center)
                         .padding()
+                    Spacer()
                     Text("Shake to whip")
-                        .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
                 }
             }.navigationBarTitle("Portable Whip")
