@@ -13,7 +13,7 @@ struct ContentView: View {
         TabView{
             WhipView()
                 .tabItem {
-                    Image(systemName: "gear")
+                    Image(systemName: "house")
                     Text("Whip")
                 }
             AboutView()
