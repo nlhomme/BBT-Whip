@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		3781781C25628D0A00807BBA /* Portable-Whip-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3781780025628D0800807BBA /* Portable-Whip-Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3781782925628FFE00807BBA /* WatchShaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781782825628FFE00807BBA /* WatchShaker.swift */; };
 		378DB50025644C26008E9508 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378DB4FF25644C26008E9508 /* SettingsView.swift */; };
+		D229703C257E2F77000B6415 /* Shiny in Frameworks */ = {isa = PBXBuildFile; productRef = D229703B257E2F77000B6415 /* Shiny */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D229703C257E2F77000B6415 /* Shiny in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +213,9 @@
 				3781781B25628D0A00807BBA /* PBXTargetDependency */,
 			);
 			name = "Portable-Whip";
+			packageProductDependencies = (
+				D229703B257E2F77000B6415 /* Shiny */,
+			);
 			productName = "BBT-Whip";
 			productReference = 373735722555F415006E1AA6 /* Portable-Whip.app */;
 			productType = "com.apple.product-type.application";
@@ -278,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 373735692555F415006E1AA6;
+			packageReferences = (
+				D229703A257E2F77000B6415 /* XCRemoteSwiftPackageReference "shiny" */,
+			);
 			productRefGroup = 373735732555F415006E1AA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -654,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D229703A257E2F77000B6415 /* XCRemoteSwiftPackageReference "shiny" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/shiny";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D229703B257E2F77000B6415 /* Shiny */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D229703A257E2F77000B6415 /* XCRemoteSwiftPackageReference "shiny" */;
+			productName = Shiny;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3737356A2555F415006E1AA6 /* Project object */;
 }

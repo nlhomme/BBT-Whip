@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFoundation
+import Shiny
 
 let path = Bundle.main.path(forResource: "whip-cracking.mp3", ofType: nil)!
 let url = URL(fileURLWithPath: path)
@@ -39,6 +40,13 @@ struct ContentView: View {
                         .padding()
                     Spacer()
                     Text("Shake to whip")
+                        .font(.largeTitle)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).shiny()
+                        .background(
+                            RoundedRectangle(cornerRadius: 14.0)
+                                .frame(width: 200.0, height: 70.0)
+                                .shiny(.hyperGlossy(UIColor.systemGray5))
+                        )
                     Spacer()
                 }
             }.navigationBarTitle("Portable Whip")
