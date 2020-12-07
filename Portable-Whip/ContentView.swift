@@ -16,6 +16,8 @@ var whipCrackingSoundEffect: AVAudioPlayer?
 
 struct ContentView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         NavigationView(){
             ZStack {
@@ -44,8 +46,8 @@ struct ContentView: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).shiny()
                         .background(
                             RoundedRectangle(cornerRadius: 14.0)
-                                .frame(width: 200.0, height: 70.0)
-                                .shiny(.hyperGlossy(UIColor.systemGray5))
+                                .frame(width: 250.0, height: 70.0)
+                                .shiny(.hyperGlossy(colorScheme == .dark ? .black : .white, intensity: CGFloat(0.0)))
                         )
                     Spacer()
                 }
