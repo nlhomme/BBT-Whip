@@ -1,5 +1,5 @@
 //
-//  Settings.swift
+//  SettingsView.swift
 //  Portable-Whip
 //
 //  Created by Nicolas Lhomme on 17/11/2020.
