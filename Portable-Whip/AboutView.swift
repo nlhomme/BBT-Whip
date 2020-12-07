@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  AboutView.swift
 //  Portable-Whip
 //
 //  Created by Nicolas Lhomme on 17/11/2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct AboutView: View {
     @State private var selectedDisplayMode: NavigationBarItem.TitleDisplayMode = .large
     @State private var navigationTitle: String = "Settings"
     
@@ -49,6 +49,6 @@ struct SettingsView: View {
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        AboutView()
     }
 }

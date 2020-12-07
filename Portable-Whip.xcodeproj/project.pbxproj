@@ -23,7 +23,7 @@
 		3781781825628D0A00807BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781781725628D0A00807BBA /* Assets.xcassets */; };
 		3781781C25628D0A00807BBA /* Portable-Whip-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3781780025628D0800807BBA /* Portable-Whip-Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3781782925628FFE00807BBA /* WatchShaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781782825628FFE00807BBA /* WatchShaker.swift */; };
-		378DB50025644C26008E9508 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378DB4FF25644C26008E9508 /* SettingsView.swift */; };
+		378DB50025644C26008E9508 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378DB4FF25644C26008E9508 /* AboutView.swift */; };
 		D229703C257E2F77000B6415 /* Shiny in Frameworks */ = {isa = PBXBuildFile; productRef = D229703B257E2F77000B6415 /* Shiny */; };
 		D2A8697F257E7C64005C2E05 /* WhipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8697E257E7C64005C2E05 /* WhipView.swift */; };
 /* End PBXBuildFile section */
@@ -91,7 +91,7 @@
 		3781781725628D0A00807BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3781781925628D0A00807BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3781782825628FFE00807BBA /* WatchShaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchShaker.swift; sourceTree = "<group>"; };
-		378DB4FF25644C26008E9508 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		378DB4FF25644C26008E9508 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D2A8697E257E7C64005C2E05 /* WhipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 			children = (
 				373735752555F416006E1AA6 /* BBT_WhipApp.swift */,
 				373735772555F416006E1AA6 /* ContentView.swift */,
-				378DB4FF25644C26008E9508 /* SettingsView.swift */,
+				378DB4FF25644C26008E9508 /* AboutView.swift */,
 				D2A8697E257E7C64005C2E05 /* WhipView.swift */,
 				373735852555F9D9006E1AA6 /* ShakeGestureManager.swift */,
 				373735792555F416006E1AA6 /* Assets.xcassets */,
@@ -339,7 +339,7 @@
 				373735782555F416006E1AA6 /* ContentView.swift in Sources */,
 				373735762555F416006E1AA6 /* BBT_WhipApp.swift in Sources */,
 				D2A8697F257E7C64005C2E05 /* WhipView.swift in Sources */,
-				378DB50025644C26008E9508 /* SettingsView.swift in Sources */,
+				378DB50025644C26008E9508 /* AboutView.swift in Sources */,
 				373735862555F9D9006E1AA6 /* ShakeGestureManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
