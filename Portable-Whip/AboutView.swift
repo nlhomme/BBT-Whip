@@ -40,9 +40,7 @@ struct AboutView: View {
                 )
             }.listStyle(InsetGroupedListStyle())
             .buttonStyle(PlainButtonStyle())
-            
-        }.navigationBarTitle(navigationTitle)
-        .navigationBarTitleDisplayMode(.large)
+        }
     }
 }
 
