@@ -27,14 +27,6 @@ struct WhipView: View {
                 VStack{
                     Spacer()
                     
-                    Image("Whip")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(alignment: .center)
-                        .padding()
-
-                    Spacer()
-                    
                     Text("Shake to whip")
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).shiny()
@@ -43,6 +35,15 @@ struct WhipView: View {
                                 .frame(width: 250.0, height: 70.0)
                                 .shiny(.hyperGlossy(colorScheme == .dark ? .black : .white, intensity: CGFloat(0.0)))
                         )
+                    
+                    Spacer()
+                    
+                    Image("Whip")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(alignment: .center)
+                        .padding()
+
                     Spacer()
                 }
             }.navigationBarTitle("Portable Whip")
